@@ -75,14 +75,23 @@ WSGI_APPLICATION = 'epc.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sdp2epc',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'USER': 'root',
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+        'NAME': 'mydb',
+
+        'USER': 'postgres',
+
         'PASSWORD': 'jaanu@123456',
+
+        'HOST': 'epc.postgres.database.azure.com',
+
+        'PORT': '5432',
+
     }
+
 }
 
 
