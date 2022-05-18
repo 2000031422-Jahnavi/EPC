@@ -1,0 +1,19 @@
+{% extends "commons.html" %}
+{% block content%}
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" href= "{% static 'home.css' %}">
+  <ul>
+  <li><a href="/signout">signout</a></li>
+</ul>
+</head>
+
+<div>
+    <h1 style="text-align: center;">"Thanks for Logging HIRE IT!!!" {{request.user.first_name}} </h1>
+    <h3 style="text-align: center;">Hope you select the right job</h3>
+    <center>
+    <img src="/static/visit.jpg" width="800" height="200">
+</center>
+    </div>
+{% endblock %}

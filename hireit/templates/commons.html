@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width+device-width,initial-scale=1">
+        <link rel="stylesheet" href= "{% static 'main.css' %}">
+    <script src="static/validations.js" type="text/javascript"></script>
+</head>
+<html>
+  <!-- <li><a href="/signout">signout</a></li> -->
+<body>
+    <header>
+        <h1> <b>HIRE IT!!!</b></h1>
+        <p><b>MAKE YOUR FUTURE BRIGHT</b></p>
+
+    </header>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>
